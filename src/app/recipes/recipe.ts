@@ -1,10 +1,6 @@
+import {Ingredient} from '../shared';
+
 export class Recipe {
-  name;
-  description;
-  imagePath;
-  constructor(name, description, imagePath) {
-    this.name=name;
-    this.description=description;
-    this.imagePath=imagePath;
+  constructor(public name, public description, public imagePath, public ingredients: Ingredient[]) {
   }
 }
